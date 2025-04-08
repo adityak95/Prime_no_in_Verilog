@@ -1,0 +1,15 @@
+module tb;
+integer i,count,j;
+initial begin 
+for(i=2;i<=100;i=i+1)begin
+	count=0;
+	for(j=1;j<=i;j=j+1)begin
+		if(i%j==0) 
+			count=count+1;
+	end
+  if(count==2) begin 
+	$display("i=%d",i);
+	end
+end
+end
+endmodule
